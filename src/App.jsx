@@ -65,13 +65,13 @@ const showAccordion = () => {
     return (
 <div className='container border-top pt-4'>
         <div className='row'>
-          <div className="col-md-8">
+          <div className="col-md-8 sm-6">
 
             {blogs.map((b) => <Blog key={b.id} minCountBlog={minCountBlog} bookmarkBlog={bookmarkBlog} blog={b}></Blog>)}
               
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 sm-6">
             <Bookmarked minBlog={minBlog} booksmark={booksmark}/>
           </div>
 
