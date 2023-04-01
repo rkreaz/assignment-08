@@ -1,39 +1,32 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import navImg from '../../assets/image/pexels-photo-614810.webp'
 import './Header.css'
-import cardImage from '../../assets/image/pexels-photo-614810.webp'
 
-const Header = () => {
+function CollapsibleExample() {
     return (
-
-        <nav className="navbar navbar-expand-lg bg-light mb-3">
-            <div className="container">
-                <a className="navbar-brand" href="/"><b className='knowledge-cafe'>knowledge-cafe</b></a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse justify-content-end"id="navbarText">
-                    <ul className="navbar-nav mb-2 mb-lg-0 nav_bar">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/blog">Blog</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Qustion</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Login</a>
-                        </li>
-                    </ul>
+        <Navbar className='text-bg-secondary p-3' collapseOnSelect expand="lg">
+            <Container>
+                <Navbar.Brand className='knowledge-cafe text-white' href="/">Knowledge Cafe</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                       
+                        
+                    </Nav>
+                    <Nav className='nav_bar'>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/blog">Question</Nav.Link>
+                        <Nav.Link href="#login">Login</Nav.Link>
+                    </Nav>
                     <div>
-                        <img className='header_img' src={cardImage}/>
+                        <img className='header_img' src={navImg} alt="" />
                     </div>
-                </div>
-            </div>
-        </nav>
-    
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
-};
+}
 
-export default Header;
+export default CollapsibleExample;

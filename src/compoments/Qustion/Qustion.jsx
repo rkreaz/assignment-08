@@ -5,7 +5,7 @@ import './Qustion.css'
 const Qustion = () => {
     return (
         <div className='container'>
-            <div>
+            <div className='my-5'>
                 <Card>
                     <Card.Body className='question_body'>
                         <Card.Title className='question_title'>1.Difference between props and state ? </Card.Title>

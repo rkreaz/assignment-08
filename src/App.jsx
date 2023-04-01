@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Qustion from './compoments/Qustion/Qustion';
 
+
 function App() {
   const [count, setCount] = useState(0)
   const [booksmark, setBooksmark] = useState([])
@@ -66,7 +67,6 @@ const showAccordion = () => {
 <div className='container border-top pt-4'>
         <div className='row'>
           <div className="col-md-8 order-md-1 order-1">
-
             {blogs.map((b) => <Blog key={b.id} minCountBlog={minCountBlog} bookmarkBlog={bookmarkBlog} blog={b}></Blog>)}
               
           </div>

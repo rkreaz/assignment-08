@@ -1,26 +1,18 @@
 .header_img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 .knowledge-cafe{
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 160%;
     color: #111111;
 }
 .nav_bar{
     margin-right: 25px;
 }
-.nav_bar li a{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: #111111;
-}
-.nav_bar li a:hover{
-    color: #6047EC;
-    background: rgba(17, 17, 17, 0.05);
-    border-radius: 5px;
+.nav_bar a {
+    color: white;
 }
